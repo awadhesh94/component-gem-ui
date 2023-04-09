@@ -1,5 +1,5 @@
 import React from 'react';
 
 export const Button = () => {
-  return <div>Button</div>;
+  return <div className="font-brandHeading text-brand-purple">Button</div>;
 };

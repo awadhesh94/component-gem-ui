@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'PaytoneOne';
+  src: url('../../public/fonts/PaytoneOne.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'OutfitThin';
+  src: url('../../public/fonts/Outfit-Thin.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'OutfitRegular';
+  src: url('../../public/fonts/Outfit-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'OutfitLight';
+  src: url('../../public/fonts/Outfit-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'OutfitMedium';
+  src: url('../../public/fonts/Outfit-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'OutfitBold';
+  src: url('../../public/fonts/Outfit-Bold.ttf') format('truetype');
+}
+
+@layer base {
+  .brand-body {
+    @apply bg-brand-coal text-brand-biege font-brandRegular;
+  }
+}
