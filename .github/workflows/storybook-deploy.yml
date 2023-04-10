@@ -1,31 +1,24 @@
-name: Storybook Deploy
-
-on:
+on: 
   push:
     branches:
-      - master # Change this to the main branch of your repository
-
+     - master
+    paths: ["stories/**", "src/components/**"]
+    
+name: Publish stories if changed
+    
 jobs:
-  deploy:
-    runs-on: ubuntu-latest # You can choose a different operating system if needed
-
+  build-and-deploy:
+    runs-on: ubuntu-latest
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-
-    - name: Set up Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: 16 # Specify Node.js 16 as the version
-
-    - name: Install dependencies
-      run: yarn # Replace with the command to install your dependencies
-
+    - name: Checkout
+      uses: actions/checkout@master
     - name: Build Storybook
-      run: yarn build-storybook # Replace with the command to build your Storybook
-
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
+      run: |
+        npm install
+        npm run build-storybook
+    - name: Build and deploy to storybook-static branch
+      uses: JamesIves/github-pages-deploy-action@3.4.8
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: storybook-static # Change this to the build output directory of your Storybook
+        ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: storybook-static
+        FOLDER: storybook-static
