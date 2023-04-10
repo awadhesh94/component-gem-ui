@@ -10,19 +10,22 @@ jobs:
     runs-on: ubuntu-latest # You can choose a different operating system if needed
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-        with:
-          node-version: 16 # Specify Node.js 16 as the version
+    - name: Checkout code
+      uses: actions/checkout@v2
 
-      - name: Install dependencies
-        run: yarn # Replace with the command to install your dependencies
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: 16 # Specify Node.js 16 as the version
 
-      - name: Build Storybook
-        run: yarn build-storybook # Replace with the command to build your Storybook
+    - name: Install dependencies
+      run: yarn # Replace with the command to install your dependencies
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: storybook-static # Change this to the build output directory of your Storybook
+    - name: Build Storybook
+      run: yarn build-storybook # Replace with the command to build your Storybook
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: storybook-static # Change this to the build output directory of your Storybook
