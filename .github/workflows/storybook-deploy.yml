@@ -3,7 +3,7 @@ name: Storybook Deploy
 on:
   push:
     branches:
-      - master # or the branch you want to trigger the deployment on
+      - master
 
 jobs:
   deploy:
