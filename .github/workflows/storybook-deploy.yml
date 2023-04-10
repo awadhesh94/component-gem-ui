@@ -1,19 +1,35 @@
-# .github/workflows/chromatic.yml
+name: Storybook Deploy
 
-# Workflow name
-name: 'StoryBook'
+on:
+  push:
+    branches:
+      - master # or the branch you want to trigger the deployment on
 
-# Event for the workflow
-on: push
-
-# List of jobs
 jobs:
-  test:
-    # Operating System
+  deploy:
     runs-on: ubuntu-latest
-    # Job steps
+
     steps:
-      - uses: actions/checkout@v3
-      - run: yarn
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install Node.js
+        uses: actions/setup-node@v2
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          node-version: 16 # or the latest version of Node.js
+
+      - name: Install Yarn
+        run: npm install -g yarn@latest
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Build Storybook
+        run: yarn build-storybook
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: storybook-static # or the directory where your Storybook build is generated
