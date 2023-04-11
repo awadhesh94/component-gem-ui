@@ -4,6 +4,7 @@ import { UnderLine } from '../Common/UnderLine';
 
 export const Card: React.FC<CardProps> = ({
   className,
+  textColor,
   icon,
   subTitle,
   title,
@@ -19,7 +20,7 @@ export const Card: React.FC<CardProps> = ({
             <h3 className="text-2xl font-brandMedium capitalize">{title}</h3>
             {description && (
               <>
-                <UnderLine />
+                <UnderLine className={textColor} />
                 <p className="font-brandLight leading-normal text-sm">
                   {description}
                 </p>
