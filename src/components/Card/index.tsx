@@ -18,8 +18,8 @@ export const Card: React.FC<CardProps> = ({
             <h3 className="text-2xl font-brandMedium capitalize">{title}</h3>
             {description && (
               <>
-                <hr className="border-1 rounded my-4 bg-inherit" />
-                <p className="font-brandLight leading-normal text-sm">
+                <hr className="border-1 rounded my-5 bg-inherit" />
+                <p className="font-brandLight leading-relaxed text-sm">
                   {description}
                 </p>
               </>
