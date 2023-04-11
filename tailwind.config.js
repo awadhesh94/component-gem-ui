@@ -32,7 +32,9 @@ module.exports = {
       'brand-blue': '#12b5e5',
       'brand-orange': '#fc7428',
       'brand-red': '#ed203d',
-      'brand-white': '#fff',
+      'brand-white': '#ffffff',
+      'brand-lightText': '#162c49',
+      'brand-lightBlue': '#f3f6fa',
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
