@@ -27,12 +27,6 @@
   src: url('../../public/fonts/Outfit-Bold.ttf') format('truetype');
 }
 
-@layer base {
-  * {
-    @apply font-brandRegular text-brand-coal;
-  }
-}
-
 @layer components {
   .cardContainer {
     height: auto;

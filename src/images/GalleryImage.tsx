@@ -4,6 +4,7 @@ import { ImageProps } from '../types/image';
 export const GalleryImage: React.FC<ImageProps> = ({
   width = 60,
   height = 60,
+  color,
 }) => {
   return (
     <svg width={width} height={height} viewBox="0 -0.5 21 21" version="1.1">
@@ -17,7 +18,7 @@ export const GalleryImage: React.FC<ImageProps> = ({
         <g
           id="Dribbble-Light-Preview"
           transform="translate(-379.000000, -680.000000)"
-          fill="#000000"
+          fill={color}
         >
           <g id="icons" transform="translate(56.000000, 160.000000)">
             <path
