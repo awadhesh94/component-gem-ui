@@ -566,6 +566,10 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(243 139 163 / var(--tw-bg-opacity));
 }
+.bg-brand-purple {
+  --tw-bg-opacity: 1;
+  background-color: rgb(123 94 167 / var(--tw-bg-opacity));
+}
 .bg-brand-yellow {
   --tw-bg-opacity: 1;
   background-color: rgb(252 186 40 / var(--tw-bg-opacity));
@@ -625,4 +629,4 @@ video {
 }
 
 
-/*# sourceMappingURL=main.1a464879.css.map*/
+/*# sourceMappingURL=main.d4586b2a.css.map*/
