@@ -50,7 +50,7 @@ export const _NoIcon = {
 
 export const _WithDarkTheme = {
   args: {
-    className: 'bg-brand-coal text-brand-biege',
+    className: 'bg-brand-purple text-brand-biege',
     icon: <PostImage color="#f9f4da" />,
     subTitle: '05',
     title,
