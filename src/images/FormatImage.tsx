@@ -1,5 +1,5 @@
 import React from 'react';
-import { ImageProps } from '../types/image';
+import { ImageProps } from '../types/Image';
 
 export const FormatImage: React.FC<ImageProps> = ({
   width = 60,
