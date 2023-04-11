@@ -516,6 +516,22 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+h3 {
+  margin-bottom: 1rem;
+  font-family: OutfitBold, sans-serif, serif;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(15 13 14 / var(--tw-text-opacity));
+}
+.subDescription {
+  font-family: OutfitRegular, sans-serif, serif;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  line-height: 1.375;
+  --tw-text-opacity: 1;
+  color: rgb(22 44 73 / var(--tw-text-opacity));
+}
 .cardContainer {
   height: auto;
   cursor: pointer;
@@ -534,9 +550,32 @@ video {
   padding: 2rem;
     border-radius: 1.2rem;
 }
+.accordionContainer {
+  display: flex;
+  flex: 1 1;
+    max-width: 1440px;
+    padding-left: 115px;
+    padding-right: 115px;
+}
+.accordionWrapper,
+  .accordionImage {
+  flex-basis: 50%;
+}
+.accordionContent {
+  gap: 1rem;
+}
+.accordionAbout {
+  margin-bottom: 3rem;
+}
 .my-5 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
+}
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+.ml-32 {
+  margin-left: 8rem;
 }
 .mt-16 {
   margin-top: 4rem;
@@ -547,12 +586,27 @@ video {
 .grid {
   display: grid;
 }
+.w-full {
+  width: 100%;
+}
 .transform {
   -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
           transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+.flex-row {
+  flex-direction: row;
+}
+.items-center {
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
 .rounded {
   border-radius: 0.25rem;
+}
+.rounded-2xl {
+  border-radius: 1rem;
 }
 .bg-brand-coal {
   --tw-bg-opacity: 1;
@@ -561,6 +615,10 @@ video {
 .bg-brand-light-green {
   --tw-bg-opacity: 1;
   background-color: rgb(207 233 87 / var(--tw-bg-opacity));
+}
+.bg-brand-lightBlue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 246 250 / var(--tw-bg-opacity));
 }
 .bg-brand-pink {
   --tw-bg-opacity: 1;
@@ -574,6 +632,23 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(252 186 40 / var(--tw-bg-opacity));
 }
+.object-cover {
+  object-fit: cover;
+}
+.px-11 {
+  padding-left: 2.75rem;
+  padding-right: 2.75rem;
+}
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.pt-3 {
+  padding-top: 0.75rem;
+}
+.font-brandBold {
+  font-family: OutfitBold, sans-serif, serif;
+}
 .font-brandLight {
   font-family: OutfitLight, sans-serif, serif;
 }
@@ -584,9 +659,23 @@ video {
   font-size: 1.5rem;
   line-height: 2rem;
 }
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.font-bold {
+  font-weight: 700;
+}
+.font-normal {
+  font-weight: 400;
 }
 .capitalize {
   text-transform: capitalize;
@@ -629,4 +718,4 @@ video {
 }
 
 
-/*# sourceMappingURL=main.d9d805c3.css.map*/
+/*# sourceMappingURL=main.de750ef0.css.map*/
