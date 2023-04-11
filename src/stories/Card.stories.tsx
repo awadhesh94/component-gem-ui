@@ -19,7 +19,6 @@ type Story = StoryObj<typeof meta>;
 export const WithContent: Story = {
   args: {
     className: 'bg-brand-light-green text-brand-coal',
-    textColor: 'bg-brand-coal',
     icon: <PostImage color="#0f0d0e" />,
     subTitle: '01',
     title,
@@ -30,7 +29,6 @@ export const WithContent: Story = {
 export const NoDescription: Story = {
   args: {
     className: 'bg-brand-yellow text-brand-coal',
-    textColor: 'bg-brand-coal',
     icon: <FormatImage color="#0f0d0e" />,
     subTitle: '02',
     title,
@@ -40,7 +38,6 @@ export const NoDescription: Story = {
 export const NoSubTitle: Story = {
   args: {
     className: 'bg-brand-pink text-brand-coal',
-    textColor: 'bg-brand-coal',
     icon: <GalleryImage color="#0f0d0e" />,
     title,
     description,
@@ -50,7 +47,6 @@ export const NoSubTitle: Story = {
 export const NoIcon: Story = {
   args: {
     className: 'bg-brand-purple text-brand-biege',
-    textColor: 'bg-brand-biege',
     subTitle: '04',
     title,
     description,
@@ -60,7 +56,6 @@ export const NoIcon: Story = {
 export const WithDarkTheme: Story = {
   args: {
     className: 'bg-brand-coal text-brand-biege',
-    textColor: 'bg-brand-biege',
     icon: <PostImage color="#f9f4da" />,
     subTitle: '05',
     title,
