@@ -517,10 +517,11 @@ video {
   --tw-backdrop-sepia:  ;
 }
 .cardContainer {
-    height: auto;
+  height: auto;
+  cursor: pointer;
     min-height: 450px;
     width: 344px;
-  }
+}
 .cardWrapper {
   position: relative;
   display: flex;
@@ -533,13 +534,9 @@ video {
   padding: 2rem;
     border-radius: 1.2rem;
 }
-.underLine {
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
-  width: 100%;
-  --tw-bg-opacity: 1;
-  background-color: rgb(15 13 14 / var(--tw-bg-opacity));
-    padding: 1px 0px;
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .mt-16 {
   margin-top: 4rem;
@@ -554,9 +551,8 @@ video {
   -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
           transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
-.bg-brand-biege {
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 244 218 / var(--tw-bg-opacity));
+.rounded {
+  border-radius: 0.25rem;
 }
 .bg-brand-coal {
   --tw-bg-opacity: 1;
@@ -633,4 +629,4 @@ video {
 }
 
 
-/*# sourceMappingURL=main.81018d03.css.map*/
+/*# sourceMappingURL=main.68fdea24.css.map*/
