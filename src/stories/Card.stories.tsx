@@ -14,6 +14,7 @@ export default {
 export const _WithContent = {
   args: {
     className: 'bg-brand-light-green text-brand-coal',
+    textColor: 'bg-brand-coal',
     icon: <PostImage color="#0f0d0e" />,
     subTitle: '01',
     title,
@@ -24,6 +25,7 @@ export const _WithContent = {
 export const _NoDescription = {
   args: {
     className: 'bg-brand-yellow text-brand-coal',
+    textColor: 'bg-brand-coal',
     icon: <FormatImage color="#0f0d0e" />,
     subTitle: '02',
     title,
@@ -33,6 +35,7 @@ export const _NoDescription = {
 export const _NoSubTitle = {
   args: {
     className: 'bg-brand-pink text-brand-coal',
+    textColor: 'bg-brand-coal',
     icon: <GalleryImage color="#0f0d0e" />,
     title,
     description,
@@ -42,6 +45,7 @@ export const _NoSubTitle = {
 export const _NoIcon = {
   args: {
     className: 'bg-brand-coal text-brand-biege',
+    textColor: 'bg-brand-biege',
     subTitle: '04',
     title,
     description,
@@ -51,6 +55,7 @@ export const _NoIcon = {
 export const _WithDarkTheme = {
   args: {
     className: 'bg-brand-purple text-brand-biege',
+    textColor: 'bg-brand-biege',
     icon: <PostImage color="#f9f4da" />,
     subTitle: '05',
     title,
