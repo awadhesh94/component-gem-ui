@@ -30,7 +30,7 @@
 @layer components {
   .cardContainer {
     @apply cursor-pointer h-auto;
-    min-height: 450px;
+    min-height: 500px;
     width: 344px;
   }
   .cardIcon {
