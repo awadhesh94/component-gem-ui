@@ -15,7 +15,9 @@ export const Card: React.FC<CardProps> = ({
           <div className="card-icon">{icon}</div>
           <div className="grid mt-16">
             <span className="font-brandMedium">{subTitle}</span>
-            <h3 className="text-2xl font-brandMedium capitalize">{title}</h3>
+            <h3 className="text-2xl font-brandMedium leading-relaxed capitalize">
+              {title}
+            </h3>
             {description && (
               <>
                 <hr className="border-1 rounded my-5 bg-inherit" />

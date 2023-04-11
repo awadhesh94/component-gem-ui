@@ -28,6 +28,12 @@
 }
 
 @layer components {
+  h3 {
+    @apply text-brand-coal text-4xl font-brandBold mb-4;
+  }
+  .subDescription {
+    @apply font-brandRegular text-brand-lightText text-lg leading-snug;
+  }
   .cardContainer {
     @apply cursor-pointer h-auto;
     min-height: 500px;
@@ -40,5 +46,21 @@
   .cardWrapper {
     @apply h-full w-full flex justify-between flex-col overflow-hidden p-8 relative break-words;
     border-radius: 1.2rem;
+  }
+  .accordionContainer {
+    @apply flex flex-1;
+    max-width: 1440px;
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+  .accordionWrapper,
+  .accordionImage {
+    @apply basis-1/2;
+  }
+  .accordionContent {
+    @apply gap-4;
+  }
+  .accordionAbout {
+    @apply mb-12;
   }
 }

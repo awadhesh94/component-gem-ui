@@ -1,7 +1,7 @@
 import React from 'react';
-import { ImageProps } from '../types/Image';
+import { SvgProps } from '../types/Svg';
 
-export const FormatImage: React.FC<ImageProps> = ({
+export const FormatImage: React.FC<SvgProps> = ({
   width = 60,
   height = 60,
 }) => {

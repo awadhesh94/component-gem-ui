@@ -1,0 +1,18 @@
+{
+  "title": "What is gamification?",
+  "description": "Gamification is the approach to apply game principles and playing methods to a non-game context to create an experience that is like playing a game. This is used to engage and motivate the user.",
+  "accordionList": [
+    {
+      "title": "Education",
+      "description": "Learning should be fun and enjoyable. Our products encourage, and motivate users to learn and remember through playing and exploring immersive experiences."
+    },
+    {
+      "title": "Digital Marketing",
+      "description": "Let your Audience experience something they will remember. Connect a joyful and memorable experience to your brand through gamification; in person at a venue, or from the comfort of their own couch!"
+    },
+    {
+      "title": "Business",
+      "description": "Want to give new employees and/or partners a tour of your office, train new employees or teach company culture? Look no further. Gamification can be used for remote employee training in a fun and memorable way."
+    }
+  ]
+}
