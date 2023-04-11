@@ -1,10 +1,8 @@
 import React from 'react';
-import { CardProps } from '../../types/card';
-import { UnderLine } from '../Common/UnderLine';
+import { CardProps } from '../../types/Card';
 
 export const Card: React.FC<CardProps> = ({
   className,
-  textColor,
   icon,
   subTitle,
   title,
@@ -20,7 +18,7 @@ export const Card: React.FC<CardProps> = ({
             <h3 className="text-2xl font-brandMedium capitalize">{title}</h3>
             {description && (
               <>
-                <UnderLine className={textColor} />
+                <hr className="border-1 rounded my-4 bg-inherit" />
                 <p className="font-brandLight leading-normal text-sm">
                   {description}
                 </p>
