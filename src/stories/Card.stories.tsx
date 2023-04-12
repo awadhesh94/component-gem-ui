@@ -6,7 +6,7 @@ import { PostImage } from '../images/PostImage';
 import { title, description } from '../content/card.json';
 
 const meta = {
-  title: 'Card',
+  title: 'Component/Card',
   component: Card,
   tags: ['autodocs'],
   argTypes: {
