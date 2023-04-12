@@ -14,7 +14,18 @@ module.exports = {
       md: '768px',
       lg: '1024px',
       xl: '1280px',
-      xxl: '1536px',
+      '2xl': '1536px',
+    },
+    fontFamily: {
+      brandThin: ['font-100', 'sans-serif', 'serif'],
+      brandExtraLight: ['font-200', 'sans-serif', 'serif'],
+      brandLight: ['font-300', 'sans-serif', 'serif'],
+      brandRegular: ['font-400', 'sans-serif', 'serif'],
+      brandMedium: ['font-500', 'sans-serif', 'serif'],
+      brandSemiBold: ['font-600', 'sans-serif', 'serif'],
+      brandBold: ['font-700', 'sans-serif', 'serif'],
+      brandExtraBold: ['font-800', 'sans-serif', 'serif'],
+      brandBlack: ['font-900', 'sans-serif', 'serif'],
     },
     colors: {
       'gray-light': '#1b1d23',
@@ -35,16 +46,6 @@ module.exports = {
       'brand-white': '#ffffff',
       'brand-lightText': '#162c49',
       'brand-lightBlue': '#f3f6fa',
-    },
-    fontFamily: {
-      sans: ['Graphik', 'sans-serif'],
-      serif: ['Merriweather', 'serif'],
-      brandHeading: ['PaytoneOne', 'sans-serif', 'serif'],
-      brandThin: ['OutfitThin', 'sans-serif', 'serif'],
-      brandRegular: ['OutfitRegular', 'sans-serif', 'serif'],
-      brandLight: ['OutfitLight', 'sans-serif', 'serif'],
-      brandMedium: ['OutfitMedium', 'sans-serif', 'serif'],
-      brandBold: ['OutfitBold', 'sans-serif', 'serif'],
     },
     extend: {
       spacing: {

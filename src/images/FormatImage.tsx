@@ -1,10 +1,7 @@
 import React from 'react';
 import { SvgProps } from '../types/Svg';
 
-export const FormatImage: React.FC<SvgProps> = ({
-  width = 60,
-  height = 60,
-}) => {
+export const FormatImage: React.FC<SvgProps> = ({ width = 60, height = 60 }) => {
   return (
     <svg width={width} height={height} viewBox="0 0 20 20">
       <rect x="0" fill="none" width="20" height="20" />
