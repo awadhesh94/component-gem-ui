@@ -1,11 +1,7 @@
 import React from 'react';
 import { SvgProps } from '../types/Svg';
 
-export const PostImage: React.FC<SvgProps> = ({
-  width = 60,
-  height = 60,
-  color,
-}) => {
+export const PostImage: React.FC<SvgProps> = ({ width = 60, height = 60, color }) => {
   return (
     <svg width={width} height={height} viewBox="0 0 24 24" fill="none">
       <path

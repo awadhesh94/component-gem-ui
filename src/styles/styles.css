@@ -3,64 +3,38 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'PaytoneOne';
-  src: url('../../public/fonts/PaytoneOne.ttf') format('truetype');
+  font-family: 'font-100';
+  src: url('../../public/fonts/brand-100.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'OutfitThin';
-  src: url('../../public/fonts/Outfit-Thin.ttf') format('truetype');
+  font-family: 'font-200';
+  src: url('../../public/fonts/brand-200.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'OutfitRegular';
-  src: url('../../public/fonts/Outfit-Regular.ttf') format('truetype');
+  font-family: 'font-300';
+  src: url('../../public/fonts/brand-300.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'OutfitLight';
-  src: url('../../public/fonts/Outfit-Light.ttf') format('truetype');
+  font-family: 'font-400';
+  src: url('../../public/fonts/brand-400.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'OutfitMedium';
-  src: url('../../public/fonts/Outfit-Medium.ttf') format('truetype');
+  font-family: 'font-500';
+  src: url('../../public/fonts/brand-500.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'OutfitBold';
-  src: url('../../public/fonts/Outfit-Bold.ttf') format('truetype');
+  font-family: 'font-600';
+  src: url('../../public/fonts/brand-600.ttf') format('truetype');
 }
-
-@layer components {
-  h3 {
-    @apply text-brand-coal text-4xl font-brandBold mb-4;
-  }
-  .subDescription {
-    @apply font-brandRegular text-brand-lightText text-lg leading-snug;
-  }
-  .cardContainer {
-    @apply cursor-pointer h-auto;
-    min-height: 500px;
-    width: 344px;
-  }
-  .cardIcon {
-    height: 25px;
-    width: 25px;
-  }
-  .cardWrapper {
-    @apply h-full w-full flex justify-between flex-col overflow-hidden p-8 relative break-words;
-    border-radius: 1.2rem;
-  }
-  .accordionContainer {
-    @apply flex flex-1;
-    max-width: 1440px;
-    padding-left: 115px;
-    padding-right: 115px;
-  }
-  .accordionWrapper,
-  .accordionImage {
-    @apply basis-1/2;
-  }
-  .accordionContent {
-    @apply gap-4;
-  }
-  .accordionAbout {
-    @apply mb-12;
-  }
+@font-face {
+  font-family: 'font-700';
+  src: url('../../public/fonts/brand-700.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'font-800';
+  src: url('../../public/fonts/brand-800.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'font-900';
+  src: url('../../public/fonts/brand-900.ttf') format('truetype');
 }
