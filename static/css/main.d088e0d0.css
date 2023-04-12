@@ -32,7 +32,7 @@ html {
   line-height: 1.5; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */ /* 3 */
   tab-size: 4; /* 3 */
-  font-family: Graphik, sans-serif; /* 4 */
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
   -webkit-font-feature-settings: normal;
           font-feature-settings: normal; /* 5 */
   font-variation-settings: normal; /* 6 */
@@ -516,78 +516,38 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
-h3 {
-  margin-bottom: 1rem;
-  font-family: OutfitBold, sans-serif, serif;
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-  --tw-text-opacity: 1;
-  color: rgb(15 13 14 / var(--tw-text-opacity));
+.m-0 {
+  margin: 0px;
 }
-.subDescription {
-  font-family: OutfitRegular, sans-serif, serif;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  line-height: 1.375;
-  --tw-text-opacity: 1;
-  color: rgb(22 44 73 / var(--tw-text-opacity));
-}
-.cardContainer {
-  height: auto;
-  cursor: pointer;
-    min-height: 500px;
-    width: 344px;
-}
-.cardWrapper {
-  position: relative;
-  display: flex;
-  height: 100%;
-  width: 100%;
-  flex-direction: column;
-  justify-content: space-between;
-  overflow: hidden;
-  overflow-wrap: break-word;
-  padding: 2rem;
-    border-radius: 1.2rem;
-}
-.accordionContainer {
-  display: flex;
-  flex: 1 1;
-    max-width: 1440px;
-    padding-left: 115px;
-    padding-right: 115px;
-}
-.accordionWrapper,
-  .accordionImage {
-  flex-basis: 50%;
-}
-.accordionContent {
-  gap: 1rem;
-}
-.accordionAbout {
-  margin-bottom: 3rem;
-}
-.my-5 {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 .mb-6 {
   margin-bottom: 1.5rem;
 }
-.ml-32 {
-  margin-left: 8rem;
-}
-.mt-16 {
-  margin-top: 4rem;
+.mt-5 {
+  margin-top: 1.25rem;
 }
 .flex {
   display: flex;
 }
-.grid {
-  display: grid;
+.hidden {
+  display: none;
+}
+.h-auto {
+  height: auto;
+}
+.min-h-\[500px\] {
+  min-height: 500px;
 }
 .w-full {
   width: 100%;
+}
+.max-w-2xl {
+  max-width: 42rem;
+}
+.max-w-\[350px\] {
+  max-width: 350px;
 }
 .transform {
   -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -596,11 +556,20 @@ h3 {
 .flex-row {
   flex-direction: row;
 }
+.flex-col {
+  flex-direction: column;
+}
 .items-center {
   align-items: center;
 }
 .justify-between {
   justify-content: space-between;
+}
+.gap-10 {
+  gap: 2.5rem;
+}
+.gap-4 {
+  gap: 1rem;
 }
 .rounded {
   border-radius: 0.25rem;
@@ -608,9 +577,8 @@ h3 {
 .rounded-2xl {
   border-radius: 1rem;
 }
-.bg-brand-coal {
-  --tw-bg-opacity: 1;
-  background-color: rgb(15 13 14 / var(--tw-bg-opacity));
+.border-\[1px\] {
+  border-width: 1px;
 }
 .bg-brand-light-green {
   --tw-bg-opacity: 1;
@@ -620,20 +588,11 @@ h3 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 246 250 / var(--tw-bg-opacity));
 }
-.bg-brand-pink {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 139 163 / var(--tw-bg-opacity));
+.p-0 {
+  padding: 0px;
 }
-.bg-brand-purple {
-  --tw-bg-opacity: 1;
-  background-color: rgb(123 94 167 / var(--tw-bg-opacity));
-}
-.bg-brand-yellow {
-  --tw-bg-opacity: 1;
-  background-color: rgb(252 186 40 / var(--tw-bg-opacity));
-}
-.object-cover {
-  object-fit: cover;
+.p-8 {
+  padding: 2rem;
 }
 .px-11 {
   padding-left: 2.75rem;
@@ -643,17 +602,14 @@ h3 {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-.pt-3 {
-  padding-top: 0.75rem;
-}
 .font-brandBold {
-  font-family: OutfitBold, sans-serif, serif;
+  font-family: font-700, sans-serif, serif;
 }
 .font-brandLight {
-  font-family: OutfitLight, sans-serif, serif;
+  font-family: font-300, sans-serif, serif;
 }
 .font-brandMedium {
-  font-family: OutfitMedium, sans-serif, serif;
+  font-family: font-500, sans-serif, serif;
 }
 .text-2xl {
   font-size: 1.5rem;
@@ -667,25 +623,11 @@ h3 {
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+.leading-normal {
+  line-height: 1.5;
 }
-.font-bold {
-  font-weight: 700;
-}
-.font-normal {
-  font-weight: 400;
-}
-.capitalize {
-  text-transform: capitalize;
-}
-.leading-relaxed {
-  line-height: 1.625;
-}
-.text-brand-biege {
-  --tw-text-opacity: 1;
-  color: rgb(249 244 218 / var(--tw-text-opacity));
+.leading-snug {
+  line-height: 1.375;
 }
 .text-brand-coal {
   --tw-text-opacity: 1;
@@ -693,29 +635,60 @@ h3 {
 }
 
 @font-face {
-  font-family: 'PaytoneOne';
-  src: url(../../cbe5045121f3f8167fb4.ttf) format('truetype');
+  font-family: 'font-100';
+  src: url(../../1f780d7d6bc2b27b1779.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'OutfitThin';
-  src: url(../../88a7fedd5d580d884e1e.ttf) format('truetype');
+  font-family: 'font-200';
+  src: url(../../79255e48cf3c4fdf6c8c.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'OutfitRegular';
-  src: url(../../5a00cf1a6ae3ea70fb96.ttf) format('truetype');
+  font-family: 'font-300';
+  src: url(../../464b5b05807e051f1b55.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'OutfitLight';
-  src: url(../../8e4b89aa385da8f1058e.ttf) format('truetype');
+  font-family: 'font-400';
+  src: url(../../6cd30f08e67a1001e791.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'OutfitMedium';
-  src: url(../../1a96ec21fd3e057ba010.ttf) format('truetype');
+  font-family: 'font-500';
+  src: url(../../214fc41dd609ce3049bc.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'OutfitBold';
-  src: url(../../958af3eb04f5d52fff1d.ttf) format('truetype');
+  font-family: 'font-600';
+  src: url(../../8b61f81a88929d332478.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'font-700';
+  src: url(../../aa2d61d980dc30466ad3.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'font-800';
+  src: url(../../3c7a58298ac23b3f0a27.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'font-900';
+  src: url(../../1dda44e4dfbf5383ab4f.ttf) format('truetype');
+}
+@media (min-width: 1024px) {
+
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .lg\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+@media (min-width: 1280px) {
+
+  .xl\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
 }
 
 
-/*# sourceMappingURL=main.de750ef0.css.map*/
+/*# sourceMappingURL=main.d088e0d0.css.map*/
