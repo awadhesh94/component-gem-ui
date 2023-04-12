@@ -16,6 +16,6 @@ export const _Collapse: Story = {
   args: {
     title,
     description,
-    open: false,
+    open: true,
   },
 };
