@@ -519,6 +519,9 @@ video {
 .m-0 {
   margin: 0px;
 }
+.m-8 {
+  margin: 2rem;
+}
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -548,6 +551,9 @@ video {
 }
 .max-w-\[350px\] {
   max-width: 350px;
+}
+.max-w-lg {
+  max-width: 32rem;
 }
 .transform {
   -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -594,6 +600,10 @@ video {
 .p-8 {
   padding: 2rem;
 }
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
 .px-11 {
   padding-left: 2.75rem;
   padding-right: 2.75rem;
@@ -601,6 +611,10 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+.py-9 {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
 }
 .font-brandBold {
   font-family: font-700, sans-serif, serif;
@@ -622,6 +636,9 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+.font-light {
+  font-weight: 300;
 }
 .leading-normal {
   line-height: 1.5;
@@ -691,4 +708,4 @@ video {
 }
 
 
-/*# sourceMappingURL=main.d088e0d0.css.map*/
+/*# sourceMappingURL=main.6da86a83.css.map*/
