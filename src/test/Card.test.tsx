@@ -11,7 +11,7 @@ test('Card renders correctly', () => {
   render(<Card />);
 });
 
-test('Card loads data', async () => {
+test('Card loads data', () => {
   const props: CardProps = {
     className: 'bg-light-green text-coal',
     icon: <PostImage color="#0f0d0e" />,
