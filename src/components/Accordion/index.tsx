@@ -4,7 +4,7 @@ import { AddIcon } from '../../icons/AddIcon';
 import { MinusIcon } from '../../icons/MinusIcon';
 
 export const Accordion: React.FC<AccordionProps> = ({ title, description, accordionList }) => {
-  const activeClass = 'py-8 bg-brand-lightBlue mb-6';
+  const activeClass = 'py-8 bg-lightBlue mb-6';
   const [activeKey, setActiveKey] = useState<number>(0);
   return (
     <div className="max-w-2xl">

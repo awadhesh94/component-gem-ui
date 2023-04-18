@@ -14,7 +14,7 @@ export const Collapse: React.FC<CollapseProps> = ({
   const showIcon = <MinusIcon width={25} height={25} />;
 
   const icon = open ? showIcon : hideIcon;
-  const randerClass = open && 'bg-brand-lightBlue';
+  const randerClass = open && 'bg-lightBlue';
 
   return (
     <div className={`flex flex-col max-w-lg m-8 py-9 rounded-2xl ${randerClass} ${className}`}>
